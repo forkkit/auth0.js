@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>web-auth/index.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
@@ -10,250 +10,36 @@
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
-    />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="styles/prettify-tomorrow.css"
-    />
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css" />
-  </head>
-  <body>
-    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-    <label for="nav-trigger" class="navicon-button x">
-      <div class="navicon"></div>
-    </label>
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
 
-    <label for="nav-trigger" class="overlay"></label>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
-    <nav>
-      <li class="nav-link nav-home-link"><a href="index.html">Home</a></li>
-      <li class="nav-heading">Classes</li>
-      <li class="nav-heading">
-        <span class="nav-item-type type-class">C</span
-        ><span class="nav-item-name"
-          ><a href="Authentication.html">Authentication</a></span
-        >
-      </li>
-      <li class="nav-heading">
-        <span class="nav-item-type type-class">C</span
-        ><span class="nav-item-name"
-          ><a href="Management.html">Management</a></span
-        >
-      </li>
-      <li class="nav-heading">
-        <span class="nav-item-type type-class">C</span
-        ><span class="nav-item-name"><a href="WebAuth.html">WebAuth</a></span>
-      </li>
-      <li class="nav-heading"><a href="global.html">Globals</a></li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#authorize">authorize</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#buildAuthorizeUrl">buildAuthorizeUrl</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#buildLogoutUrl">buildLogoutUrl</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#callback">callback</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#changePassword">changePassword</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#checkSession">checkSession</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#crossOriginAuthenticationCallback"
-            >crossOriginAuthenticationCallback</a
-          ></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#crossOriginVerification"
-            >crossOriginVerification</a
-          ></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#delegation">delegation</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#getSSOData">getSSOData</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#getUser">getUser</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#linkUser">linkUser</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#login">login</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#loginWithCredentials"
-            >loginWithCredentials</a
-          ></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#loginWithDefaultDirectory"
-            >loginWithDefaultDirectory</a
-          ></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#loginWithResourceOwner"
-            >loginWithResourceOwner</a
-          ></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#logout">logout</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#parseHash">parseHash</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#passwordlessLogin">passwordlessLogin</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#passwordlessStart">passwordlessStart</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#passwordlessVerify">passwordlessVerify</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#patchUserAttributes"
-            >patchUserAttributes</a
-          ></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#patchUserMetadata">patchUserMetadata</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#preload">preload</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#renewAuth">renewAuth</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#signup">signup</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#signupAndAuthorize">signupAndAuthorize</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#signupAndLogin">signupAndLogin</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#userInfo">userInfo</a></span
-        >
-      </li>
-      <li class="nav-item">
-        <span class="nav-item-type type-function">F</span
-        ><span class="nav-item-name"
-          ><a href="global.html#validateAuthenticationResponse"
-            >validateAuthenticationResponse</a
-          ></span
-        >
-      </li>
-    </nav>
+<label for="nav-trigger" class="overlay"></label>
 
-    <div id="main">
-      <h1 class="page-title">web-auth/index.js</h1>
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Authentication.html">Authentication</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Management.html">Management</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="WebAuth.html">WebAuth</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#authorize">authorize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#buildAuthorizeUrl">buildAuthorizeUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#buildLogoutUrl">buildLogoutUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#callback">callback</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#changePassword">changePassword</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkSession">checkSession</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#crossOriginAuthenticationCallback">crossOriginAuthenticationCallback</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#crossOriginVerification">crossOriginVerification</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#delegation">delegation</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getChallenge">getChallenge</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getSSOData">getSSOData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getUser">getUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#linkUser">linkUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#login">login</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loginWithCredentials">loginWithCredentials</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loginWithDefaultDirectory">loginWithDefaultDirectory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loginWithResourceOwner">loginWithResourceOwner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#logout">logout</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#parseHash">parseHash</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#passwordlessLogin">passwordlessLogin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#passwordlessStart">passwordlessStart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#passwordlessVerify">passwordlessVerify</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#patchUserAttributes">patchUserAttributes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#patchUserMetadata">patchUserMetadata</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#preload">preload</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#renewAuth">renewAuth</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#signup">signup</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#signupAndAuthorize">signupAndAuthorize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#signupAndLogin">signupAndLogin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#userInfo">userInfo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#validateAuthenticationResponse">validateAuthenticationResponse</a></span></li>
+</nav>
 
-      <section>
+<div id="main">
+    
+    <h1 class="page-title">web-auth/index.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
         <article>
-          <pre
-            class="prettyprint source linenums"
-          ><code>import IdTokenVerifier from 'idtoken-verifier';
+            <pre class="prettyprint source linenums"><code>import IdTokenVerifier from 'idtoken-verifier';
 import qs from 'qs';
 
 import assert from '../helper/assert';
@@ -272,6 +58,10 @@ import CrossOriginAuthentication from './cross-origin-authentication';
 import WebMessageHandler from './web-message-handler';
 import HostedPages from './hosted-pages';
 
+function defaultClock() {
+  return new Date();
+}
+
 /**
  * Handles all the browser's AuthN/AuthZ flows
  * @constructor
@@ -283,6 +73,8 @@ import HostedPages from './hosted-pages';
  * @param {String} [options.responseMode] how the Auth response is encoded and redirected back to the client. Supported values are `query`, `fragment` and `form_post`. The `query` value is only supported when `responseType` is `code`. {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
  * @param {String} [options.scope] scopes to be requested during Auth. e.g. `openid email`
  * @param {String} [options.audience] identifier of the resource server who will consume the access token issued after Auth
+ * @param {Number} [options.leeway] number of seconds to account for clock skew when validating time-based claims in ID tokens. Defaults to 60 seconds.
+ * @param {Number} [options.maxAge] maximum elapsed time in seconds since the last time the user was actively authenticated by the authorization server.
  * @param {Array} [options.plugins]
  * @param {Number} [options._timesToRetryFailedRequests] Number of times to retry a failed request, according to {@link https://github.com/visionmedia/superagent/blob/master/lib/request-base.js}
  * @see {@link https://auth0.com/docs/api/authentication}
@@ -330,6 +122,11 @@ function WebAuth(options) {
         optional: true,
         type: 'array',
         message: 'plugins is not valid'
+      },
+      maxAge: {
+        optional: true,
+        type: 'number',
+        message: 'maxAge is not valid'
       },
       _disableDeprecationWarnings: {
         optional: true,
@@ -594,24 +391,37 @@ WebAuth.prototype.validateAuthenticationResponse = function(
         }
       );
     }
+
     if (
       validationError.error !== 'invalid_token' ||
-      validationError.errorDescription === 'Nonce does not match.'
+      (validationError.errorDescription &amp;&amp;
+        validationError.errorDescription.indexOf(
+          'Nonce (nonce) claim value mismatch in the ID token'
+        ) > -1)
     ) {
       return callback(validationError);
     }
+
     // if it's an invalid_token error, decode the token
     var decodedToken = new IdTokenVerifier().decode(parsedHash.id_token);
+
     // if the alg is not HS256, return the raw error
     if (decodedToken.header.alg !== 'HS256') {
       return callback(validationError);
     }
+
     if ((decodedToken.payload.nonce || null) !== transactionNonce) {
       return callback({
         error: 'invalid_token',
-        errorDescription: 'Nonce does not match.'
+        errorDescription:
+          'Nonce (nonce) claim value mismatch in the ID token; expected "' +
+          transactionNonce +
+          '", found "' +
+          decodedToken.payload.nonce +
+          '"'
       });
     }
+
     if (!parsedHash.access_token) {
       var noAccessTokenError = {
         error: 'invalid_token',
@@ -620,6 +430,7 @@ WebAuth.prototype.validateAuthenticationResponse = function(
       };
       return callback(noAccessTokenError);
     }
+
     // if the alg is HS256, use the /userinfo endpoint to build the payload
     return _this.client.userInfo(parsedHash.access_token, function(
       errUserInfo,
@@ -668,8 +479,9 @@ WebAuth.prototype.validateToken = function(token, nonce, cb) {
     issuer: this.baseOptions.token_issuer,
     jwksURI: this.baseOptions.jwksURI,
     audience: this.baseOptions.clientID,
-    leeway: this.baseOptions.leeway || 0,
-    __disableExpirationCheck: this.baseOptions.__disableExpirationCheck
+    leeway: this.baseOptions.leeway || 60,
+    maxAge: this.baseOptions.maxAge,
+    __clock: this.baseOptions.__clock || defaultClock
   });
 
   verifier.verify(token, nonce, function(err, payload) {
@@ -844,7 +656,7 @@ WebAuth.prototype.changePassword = function(options, cb) {
  *
  * @method passwordlessStart
  * @param {Object} options
- * @param {String} options.send what will be sent via email which could be `link` or `code`. For SMS `code` is the only one valud
+ * @param {String} options.send what will be sent via email which could be `link` or `code`. For SMS `code` is the only one valid
  * @param {String} [options.phoneNumber] phone number where to send the `code`. This parameter is mutually exclusive with `email`
  * @param {String} [options.email] email where to send the `code` or `link`. This parameter is mutually exclusive with `phoneNumber`
  * @param {String} options.connection name of the passwordless connection
@@ -900,6 +712,7 @@ WebAuth.prototype.signup = function(options, cb) {
  * @param {String} [options.nonce] value used to mitigate replay attacks when using Implicit Grant. {@link https://auth0.com/docs/api-auth/tutorials/nonce}
  * @param {String} [options.scope] scopes to be requested during Auth. e.g. `openid email`
  * @param {String} [options.audience] identifier of the resource server who will consume the access token issued after Auth
+ * @param {Object} [options.appState] any values that you want back on the authentication response
  * @see {@link https://auth0.com/docs/api/authentication#authorize-client}
  */
 WebAuth.prototype.authorize = function(options) {
@@ -1158,20 +971,20 @@ WebAuth.prototype.passwordlessVerify = function(options, cb) {
 export default WebAuth;
 </code></pre>
         </article>
-      </section>
-    </div>
+    </section>
 
-    <br class="clear" />
 
-    <footer>
-      Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on
-      Tue Jul 23 2019 10:46:01 GMT-0300 (Brasilia Standard Time) using the
-      Minami theme.
-    </footer>
 
-    <script>
-      prettyPrint();
-    </script>
-    <script src="scripts/linenumber.js"></script>
-  </body>
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Tue Jan 14 2020 11:06:46 GMT+0000 (Greenwich Mean Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
 </html>
